@@ -1,1 +1,10 @@
-
+package Your::Web::Server;
+use base qw(HTTP::Server::Simple::CGI);
+ 
+sub handle_request {
+    my ($self, $cgi) = @_;
+ 
+    #... do something, print output to default
+    # selected filehandle...
+ 
+}
